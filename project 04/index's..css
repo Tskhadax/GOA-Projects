@@ -1,0 +1,205 @@
+/* .navbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  .navbar span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar span:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  } */
+
+  .navbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: auto;
+}
+  
+.navbar a {
+    
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    /* background-color: rgba(0, 0, 0, 0.616); */
+}
+  
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 0, 0);
+}
+
+  /* ============================= */
+ body{
+  overflow: hidden;
+  background-color:rgb(0, 0, 0) ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+ }
+
+ section{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+ }
+
+/* .video0{
+    margin-left: 0px;
+    height: 500px;
+    width: 500px;
+}
+.video0:hover{
+    height: 510px;
+    width: 510px;
+    transition: 0.6s;
+} */
+.sunimg{
+    height: 400px;
+    width: 400px;
+    transition: 0.1s;
+    animation: rotation 5s linear infinite;
+}
+.sunimg:hover{
+    width: 405px;
+   
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.video1{
+   margin-left: 70px;
+    height: 80px;
+    width: 80px;
+}
+.video1:hover{
+    height: 90px;
+    width: 90px;
+    transition: 0.6s;
+}
+
+.video2{
+    /* margin-left: 40px; */
+    height: 140px;
+    width: 113px;
+}
+.video2:hover{
+    height: 150px;
+    width: 123px;
+    transition: 0.6s;
+}
+
+.video3{
+    height: 110px;
+    width: 100px;
+}
+.video3:hover{
+    height: 120px;
+    width: 110px;
+    transition: 0.6s;
+}
+
+
+.video4{
+    height: 40px;
+    width: 40px;
+    margin-top: -85px;
+}
+.video4:hover{
+    height: 50px;
+    width: 50px;
+    transition: 0.6s;
+}
+
+.video5{
+    height: 80px;
+    width: 80px;
+}
+.video5:hover{
+    height: 90px;
+    width: 90px;
+    transition: 0.6s;
+}
+.video6{
+    height: 320px;
+    width: 280px;
+}
+.video6:hover{
+    height: 330px;
+    width: 290px;
+    transition: 0.6s;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.videodiv2{
+   padding-bottom: -70px;
+} 
+
+.videodiv1{
+    margin-top: -20px;
+}
+
+.video7{
+    padding-left: 22px;
+}
+.video7:hover{
+    height: 100px;
+    width: 100px;
+    transition: 0.6s;
+}
+
+.img1:hover{
+    width: 80px;
+    height: 70px;
+    transition: 0.6s;
+}
+
+.img2:hover{
+    width: 210px;
+    height: 150px;
+    transition: 0.6s;
+}

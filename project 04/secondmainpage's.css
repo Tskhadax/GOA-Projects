@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+section div img{
+    border-radius: 15px;
+}
+
+h4{
+    font-size: 25px;
+    position: absolute;
+    bottom:130px;
+    left: 130px;
+    color: #000;
+    font-family: sans-serif;
+    background-color: #ffffffa9;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.planets i{
+    color: red;
+    position: absolute;
+    left: 240px;
+    top: 510px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+i:hover{
+    border-radius: 50px;
+    font-size:27px ;
+    transition: 0.5s;
+    padding: 0px 7px;
+    border-radius: 50px;
+    color: #000;
+    background-color: #ff0000
+    
+}
+
+
+h3{
+    padding:5px 5px;
+    border-radius: 15px;
+    background-color: #ffffffa9;
+    font-size: 25px;
+    position: absolute;
+    bottom:140px;
+    left: 470px;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.blackhole i{
+    color: red;
+    position: absolute;
+    left: 660px;
+    top: 510px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.blackhole i:hover{
+    color: #000;
+}
+
+.asteroids h2{
+    padding:5px 5px;
+    border-radius: 15px;
+    background-color: #ffffffa9;
+    font-size: 25px;
+    position: absolute;
+    bottom: 145px;
+    left: 820px;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.asteroids i{
+    color: red;
+    position: absolute;
+    bottom: 173px;
+    right: 530px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.asteroids i:hover{
+    color: #000;
+}
+
+.austrounauts{
+    color:rgb(0, 0, 0)
+}
+
+.austrounauts h1{
+    padding:5px 5px;
+    border-radius: 15px;
+    background-color: #ffffffa9;
+    position: absolute;
+    bottom: 150px;
+    right: 220px;
+    font-family: sans-serif;
+}
+
+.austrounauts i{
+    position:absolute;
+    bottom: 177px;
+    right: 180px;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.austrounauts i:hover{
+    color: #000;
+}
+.button {
+    position: absolute;
+    top: 30px;
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+
+}
+  
+.button:hover {
+    background-color: #ffffff;
+    color: #e60000;
+    font-weight: 600;
+    
+}
