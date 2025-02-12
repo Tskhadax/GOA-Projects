@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+} 
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border-radius: 15px;
+    text-align: justify;
+}
+  
+.button {
+ 
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+
+}
+  
+.button:hover {
+    transition: 0.5s;
+    background-color: #ffffff;
+    color: #e60000;
+    font-weight: 600;
+    
+}
+
+img{
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    
+    
+}
+
+img{
+   
+    width: 600px;
+    animation: rotation 5s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* 
+img:hover{
+    transition: 100s;
+    transform: rotate(10000deg);
+} */
+

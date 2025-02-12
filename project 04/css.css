@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: black; */
+} 
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+}
+.navbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: auto;
+}
+  
+.navbar a {
+    
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    /* background-color: rgba(0, 0, 0, 0.616); */
+}
+  
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body1 {
+    background-image: url(./images/Earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body2 {
+    background-image: url(./images/jupiter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body3 {
+    background-image: url(./images/mars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body4 {
+    background-image: url(./images/mercury.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body5 {
+    background-image: url(./images/moon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body6 {
+    background-image: url(./images/neptune.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body7 {
+    background-image: url(./images/Screenshot_2025-01-07_175521.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body8 {
+    background-image: url(./images/sun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body9 {
+    background-image: url(./images/uranus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body10 {
+    background-image: url(./images/venus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
