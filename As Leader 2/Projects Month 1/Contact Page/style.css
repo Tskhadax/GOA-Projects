@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins; 
+    /* box-sizing: border-box Include padding and border in the element's total width and height */
+}
+
+body{
+    background-image: url(./images/bg-image.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh; /*რადგან გვერდი მომხმარებლის ეკრანზე ბევრად მაღალია მჭირდება, რომ სიმაღლეც ავწიო 150%-ზე */
+    flex-direction: column;
+}
+
+.img-icon-container{
+    margin-top: 16px;
+    margin-left: 80px;
+}
+
+.box{
+    width: 840px;
+    height: 628px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 36px;
+    margin-top: 70px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+h1{
+    line-height: 1.2;
+    font-size: 54px;
+    text-align: center;
+    color: #ffffff;
+}
+
+p{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 16px;
+    color: #ffffff;
+}
+
+.box-item1, .box-item2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-item2{
+    margin-top: 30px;
+}
+
+label{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#email, #name{
+    width: 362px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    padding: 24px;
+    font-weight: 500;
+    outline: none;
+}
+
+#subject, #company-size{
+    border: none;
+    width: 410px;
+    height: 78px;
+    border-radius: 12px;
+    outline: none;
+    padding-left: 24px;
+    color: #000518;
+    font-weight: 500;
+    appearance: none;
+}
+
+#email::placeholder, #name::placeholder{
+    color: #c9d1de;
+
+}
+
+.email-input, .name-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu-1, .dropdown-menu-2, .message-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-item3{
+    margin-top: 30px;
+}
+
+#message{
+    height: 184px;
+    padding: 24px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#message::placeholder{
+    color: #000518;
+    font-weight: 500;
+}
+
+button{
+    width: 100%;
+    height: 80px;
+    border: none;
+    color: #3b31ac;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 24px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 950px){
+    .container{
+        height: 250vh;
+        align-items: center;
+    }
+
+    .box{
+        width: 590px;
+        height: 920px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;    
+    }
+
+    .box-item1, .box-item2, .box-item3{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+    }
+
+    #name, #email{
+        width: 540px;
+    }
+
+    .email-input, .dropdown-menu-1, .dropdown-menu-2, .message-input{
+        margin-top: 24px;
+    }
+
+    #company-size, #subject{
+        width: 588px;
+    }
+
+    p{
+        font-size: 24px;
+        width: 500px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+}

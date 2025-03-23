@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(241, 90, 34, 0.5);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    align-items: center;
+    z-index: 100; /* z-index თვისება CSS-ში აკონტროლებს ელემენტების დაწყობის თანმიმდევრობას ვებგვერდზე. ის განსაზღვრავს, თუ რომელი ელემენტები ჩნდება სხვების წინ ან უკან, როდესაც ისინი დაფარულია. */
+}
+
+header img{
+    height: 100px;
+    width: 140px;
+}
+
+header img:hover{
+    filter: brightness(1.2);
+}
+
+ul{
+    display: flex;
+    font-family: Josefin Sans;
+    width: 1000px;
+    justify-content: space-between;
+    margin-right: 16px;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+li{
+    list-style-type: none;
+}
+
+.background-photo-container{
+    background-image: url("https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1145636/settings_images/UNxILYD7SteOv9DBYb6L_book.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 680px;
+}
+
+.vegan-book{
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    padding: 50px 200px 50px 200px;
+}
+
+.text-video-container{
+    display: flex;
+    height: 380px;
+    align-items: center;
+}
+
+.text{
+    width: 580px;
+}
+
+.text h1{
+    color: rgb(103, 43, 146);
+    font-family: Arvo;
+    font-size: 30px;
+    font-weight: 400;
+    width: 400px;
+}
+
+.text p{
+    font-family: Quattrocento Sans;
+    color: #89898d;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 32px;
+}
+
+.video{
+    height: 380px;
+    width: 520px;
+    background-image: url("https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1145636/settings_images/Rp5ffaNmQYOUoUlvkbs7_6c4I4uEBSHyXRppMD0Sp_viddd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.video:hover{
+    filter: brightness(1.2);
+}
+
+.text-video-container a{
+    margin-left: 100px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.lines-get-it{
+    margin-top: 16px;
+}
+
+.lines-get-it h2{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #f2591d;
+    font-family: Arvo;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.amazon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amazon img{
+    width: 300px;
+    margin-top: 16px;
+}
+
+.amazon img:hover{
+    filter: brightness(1.2);
+}
+
+.purchase-button-container-orange, .purchase-button-container-purple, .purchase-button-container-orange-bottom{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(243, 101, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.purchase-button-container-orange button, .purchase-button-container-purple button, .purchase-button-container-orange-bottom button{
+    width: 300px;
+    height: 70px;
+    background-color:rgb(243, 101, 35);
+    border: solid 2px #ffffff;
+    outline: none;
+    border-radius: 8px;
+    font-family: Arvo;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.comments-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff;;    
+}
+
+.comments-gallery img{
+    width: 33.33%;
+    border-top: 1px solid #000000;    
+}
+
+.comment1, .comment3, .comment5{
+    width: 100%;
+    height: 450px;
+    background-color: #f0eaf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px 100px 200px;
+}
+
+.comment3{
+    height: 340px;
+}
+
+.avatar-stars-container1{
+    height: 350px;
+}
+
+.avatar-stars-container1 img{
+    height: 100%;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.comment1-text-container h2{
+    color: rgb(103, 43, 146);
+    font-family: Arvo;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.comment1-text-container p{
+    color: rgb(137, 137, 137);
+    font-family: Quattrocento Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 16px;
+}
+
+.comment2, .comment4{
+    width: 100%;
+    height: 430px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px 100px 150px;
+}
+
+.avatar-stars-container2{
+    height: 330px;
+}
+
+.avatar-stars-container2 img{
+    height: 100%;
+}
+
+
+.comment2-text-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.comment2-text-container h2, .comment4-text-container h2{
+    color: rgb(103, 43, 146);
+    font-family: Arvo;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.comment2-text-container p, .comment4-text-container p{
+    color: rgb(137, 137, 137);
+    font-family: Quattrocento Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 16px;
+    width: 840px;
+}
+
+.comment3 img, .comment5 img{
+    height: 200px;
+    position: relative;
+}
+
+.comment3-text-container h2, .comment5-text-container h2{
+    color: rgb(103, 43, 146);
+    font-family: Arvo;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.comment3-text-container p, .comment5-text-container p{
+    color: rgb(137, 137, 137);
+    font-family: Quattrocento Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 16px;
+}
+
+.comment4{
+    height: 450px;
+}
+
+.avatar-stars-container4 img{
+    height: 330px;
+}
+
+.comment4-text-container{
+    width: 850px;
+}
+
+.comment5 img{
+    position: relative;
+    top: 20px;
+}
+
+.comment5{
+    height: 330px;
+}
+
+.purchase-button-container-purple{
+    background-color: rgb(101, 45, 144);
+    border: none;
+}
+
+.purchase-button-container-purple button{
+    background-color: rgb(101, 45, 144);
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+
+.gallery-container{
+    width: 930px;
+}
+
+.gallery-container img{
+    width: 450px;
+    height: 550px;
+    padding: 16px;
+}
+
+.woman-photo{
+    width: 100%;
+    height: 900px;
+    margin-top: 16px;
+}
+
+footer{
+    width: 100%;
+    height: 560px;
+    background-color: rgb(129, 33, 101);
+}
+
+.purchase-button-container-orange-bottom{
+    border: none;
+}
+
+.footer-line{
+    width: 1px;
+    height: 400px;
+    background-color: #ffffff;
+    position: relative;
+    left: 770px;
+    bottom: 180px;
+}
+
+.FullyRaw-logo{
+    position: relative;
+    top: 100px;
+    left: 170px;
+}
+
+.buttons{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    position: relative;
+    left: 455px;
+    bottom: 10px;
+}
+
+.buttons button{
+    width: 290px;
+    height: 32px;
+    background-color: rgb(129, 33, 101);
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    margin-top: 16px;
+    color: #ffffff;
+    font-family: Quattrocento Sans;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.buttons button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.footer-right-part{
+    position: relative;
+    bottom: 550px;
+    left: 765px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-right-part h1{
+    font-family: Arvo;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px;
+    font-weight: 400;
+}
+
+.footer-right-part button{
+    height: 50px;
+    border-radius: 20px;
+    font-family: Quattrocento Sans;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: rgb(129, 33, 101);
+    color: #ffffff;
+}
+    
+.first-button{
+    width: 170px;
+    margin: 30px 0 15px 0;
+}
+
+.second-button{
+    width: 310px;
+    margin: 30px 0 0 0;
+}
+
+.first-button:hover{
+    background-color: #ffffff;
+    color: #000000;   
+}
+
+.second-button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.socials{
+    display: flex;
+    margin-top: 32px;
+}
+
+.socials div{
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 1px;
+    left: 1px;
+    margin: 1.5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb{
+    width: 40px;
+    height: 30px;
+}
+
+.x{
+    width: 20px;
+    height: 20px;
+}
+
+.ig{
+    width: 25px;
+    height: 25px;
+}
+
+.yt{
+    width: 35px;
+    height: 24px;
+}
+
+.p{
+    width: 20px;
+    height: 20px;
+}
+
+.tum{
+    width: 35px;
+    height: 20px;
+}
+
+.copyright{
+    position: relative;
+    bottom: 450px;
+    display: flex;
+    left: 600px;
+    width: 400px;
+}
+
+.c{
+    color: rgb(204, 204, 204);
+    font-family: Quattrocento Sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 6px;
+}
+
+.copyright a{
+    border-left: 1px solid rgb(204, 204, 204);
+    border-left-width: 2px;
+    padding:0 6px 0 6px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Quattrocento Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.copyright a:hover{
+    filter: brightness(1.2);
+}
+
+.footer-circle-line{
+    display: flex;
+    background-color:rgb(243, 101, 35);
+}
+
+.circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: rgb(129, 33, 101);
+    margin-bottom: -10px;
+}

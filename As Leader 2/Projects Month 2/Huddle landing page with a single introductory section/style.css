@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    background-position: 200px -35px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo{
+    margin: 60px 0 0 80px;
+    width: 220px;
+    height: 45px;
+}
+
+.illustration-mockups{
+    margin: 30px 0 0 80px;
+
+}
+
+.text-container{
+    width: 460px;
+    position: relative;
+    top: 180px;
+    left: 130px;
+    height: 100%;
+}
+
+h1{
+    font-family: poppins;
+    color: #ffffff;
+    width: 400px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    font-family: open sans;
+    color: #ffffff;
+    margin-top: 16px;
+}
+
+button{
+    margin-top: 24px;
+    width: 200px;
+    height: 55px;
+    background-color: #ffffff;
+    color: hsl(257, 40%, 49%);
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-family: poppins;
+    box-shadow: 5px 5px 5px #2c2c2c;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #ffffff;
+}
+
+.socials{
+    position: relative;
+    top: 630px;
+    height: 50px;
+    left: 80px;
+}
+
+.socials img{
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 750px) {
+    h1, p{
+        text-align: center;
+    }
+
+    p{
+        line-height: 2;
+        width: 400px;
+    }
+
+    .text-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 80px;
+        left: 70px;
+    }
+
+    .illustration-mockups{
+        width: 600px;
+        height: 420px;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 30px 0 80px 0; 
+    }
+
+    .socials{
+        left: -230px;
+        top: 300px;
+    }
+}

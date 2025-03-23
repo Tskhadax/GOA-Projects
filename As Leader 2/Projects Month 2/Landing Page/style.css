@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+}
+
+.glass-effect {
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    width: 920px;
+    height: 530px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+
+}
+
+.logo {
+    color: #000;
+    font-size: 35px;
+    float: left;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.info {
+    margin-left: 30px;
+    padding: 18px;
+}
+
+p {
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    font-family: cursive;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.socials{
+    position: relative;
+    left: 650px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials img{
+    width: 20px;
+    height: 20px;
+    border-radius: none;
+}

@@ -1,0 +1,148 @@
+body {
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    position: relative;
+    width: 300px;
+    padding: 40px 30px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #00ffc3;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #444;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label{
+    top: -10px;
+    left: 0;
+    color: #00ffc3;
+    font-size: 12px;
+}
+
+.neon-button {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #00ffc3;
+    border: none;
+    border-radius: 5px;
+    color: #111;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 0 15px #00ffc3, 0 0 45px #00ffc3, 0 0 60px #00ffc3, 0 0 80px #00ffc3;
+}
+
+.neon-button:hover {
+    background: #00e6b3;
+}
+
+.login-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-links a {
+    color: #00ffc3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.login-links a:hover {
+    color: #fff;
+}
+
+.neon-frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.neon-frame::before {
+    top: -5px;
+    left: -5px;
+}
+
+.neon-frame::after {
+    bottom: -5px;
+    right: -5px;
+}
+
+/* Neon Corners */
+.neon-corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00ffc3;
+}
+
+.neon-corner.top-left {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.neon-corner.top-right {
+    top: -10px;
+    right: -10px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.neon-corner.bottom-left {
+    bottom: -10px;
+    left: -10px;
+    border-right: none;
+    border-top: none;
+}
+
+.neon-corner.bottom-right {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+}

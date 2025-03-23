@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.container{
+    display: flex;
+    justify-content: center;      
+    align-items: center;   
+    flex-direction: column;       
+    height: 922px; /* იძულებული გავხდი, რომ ფიქსირებული ზომა გამეწერა */
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.supervisor{
+    background-color: #ffffff;
+    border-top: solid #49d1d1 4px;
+    border-radius: 5px;
+    width: 286px;
+    height: 183px;
+    padding: 32px;
+    box-shadow: -5px 10px 20px #d7e1ed;
+}
+
+.team-builder{
+    border-top: solid #ea5551 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 286px;
+    height: 183px;
+    padding: 32px;
+    box-shadow: 0px 10px 20px #d7e1ed;
+}
+
+.karma{
+    margin-top: 30px;
+    border-top: solid #fcae4a 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 286px;
+    height: 183px;
+    padding: 32px;
+    box-shadow: 0px 10px 20px #d7e1ed;
+}
+
+.calculator{
+    border-top: solid #519ff2 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 286px;
+    height: 183px;
+    padding: 32px;
+    box-shadow: 5px 10px 20px #d7e1ed;
+}
+
+.box-item1, .box-item2, .box-item3{
+    height: 530px;
+    margin-right: 30px;
+}
+
+.box-item1{
+    display: flex;
+    align-items: center;
+}
+
+.box-item3{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.text{
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+h1{
+    font-family: Poppins;
+    font-weight: 200;
+    color: #4e4e58;
+}
+
+h2{
+    font-family: Poppins;
+    font-weight: 600;
+    color: #525469;
+    font-size: 32px;
+}
+
+.text p{
+    font-family: Poppins;
+    font-weight: 400;
+    color: #abaaaf;
+    width: 550px;
+    margin-top: 16px;
+}
+
+h3{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    color: #4d4c5c;
+}
+
+.box-item1 p, .box-item2 p, .box-item3 p{
+    font-family: Poppins;
+    font-weight: 400;
+    color: #abaaaf;
+    margin-top: 8px;
+}
+
+.img-container{
+    margin-top: -90px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        height: 1560px;
+    }
+
+    .box{
+        width: 310px;
+        align-items: center;
+    }
+    
+    .box-item1, .box-item3{
+        margin-top: 30px;
+        height: 250px;
+    }
+
+    .box-item1{
+        margin: 0;
+    }
+
+    .text{
+        width: 310px;
+        margin-bottom: 72px;
+    }
+
+    .text p{
+        width: 310px;
+        margin: 0;
+    }
+
+    .supervisor{
+        width: 262px;
+        padding: 24px;
+    }
+    
+    .team-builder{
+        width: 262px;
+        padding: 24px;
+        margin-top: 30px;
+    }
+    
+    .karma{
+        width: 262px;
+        padding: 24px;
+    }
+    
+    .calculator{
+        width: 262px;
+        padding: 24px;
+    }
+}

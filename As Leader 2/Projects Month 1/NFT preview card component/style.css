@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color:#0d1a2d;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    padding: 24px;
+    height: 552px;
+    width: 302px;
+    background-color: #15273f;
+    border-radius: 12px;
+    box-shadow: 0px 32px 32px #091426;
+}
+
+.equilibrium{
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.equilibrium-container{
+    background-color: #0194a4;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+    color: #ffffff;
+    margin-top: 24px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+p{
+    margin-top: 24px;
+    color: #7c90b1;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.balance{
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+.balance h2{
+    display: inline;
+    font-size: 16px;
+    font-family: Outfit;
+    font-weight: 600;
+    color: #0fffff;
+    margin-left: 4px;
+}
+
+.time h2{
+    display: inline;
+    font-size: 16px;
+    font-family: Outfit;
+    font-weight: 400;
+    color: #839ecb;
+    margin-left: 4px;
+}
+
+.clock{
+    width: 14px;
+    height: 14px;
+}
+
+.balance-and-time{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #2f4159;
+    margin-top: 24px;
+}
+
+.avatar{
+    width: 31px;
+    height: 31px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.h3-1{
+    display: inline;
+    font-family: Outfit;
+    color: #7c90b1;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.h3-2{
+    display: inline;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.h3-2:hover{
+    color: #0fffff;
+}
+
+h1:hover{
+    color: #0fffff;
+}
+
+.equilibrium:hover{
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 500px){
+    .box{
+        height: 520px;
+    }
+
+    .equilibrium{
+        height: 280px;
+    }
+
+    .equilibrium-container{
+        height: 280px;
+    }
+}
+

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5d04e;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    padding: 24px;
+    border: 1px solid #121212;
+    width: 333px;
+    height: 470px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 9px 6px 1px #000000; /* ჰორიზონტალური, ვერტიკალური, გაბლარვის რადიუსი, ფერი */
+}
+
+.illustration-article{
+    background-image: url(./images/illustration-article.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    width: 336px;
+    height: 201px;
+}
+
+button{
+    width: 82px;
+    height: 30px;
+    background-color: #f5d04e;
+    font-family: Figtree;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 0;
+    margin-top: 24px;
+
+}
+
+h2{
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: Figtree;
+    font-weight: 500;
+}
+
+h1{
+    margin-top: 12px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h1:hover{
+    color: #f5d04e;
+}
+
+p{
+    font-family: Figtree;
+    font-size: 15px;
+    margin-top: 12px;
+    color: #8a8a8a;
+    width: 350px;
+    line-height: 1.5;
+}
+
+.image-container{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+}
+
+h3{
+    display: inline-block;
+    font-size: 14px;
+    font-family: Figtree;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .box{
+        width: 301px;
+        height: 476px;
+    }
+
+    .illustration-article{
+        width: 100%;
+    }
+}

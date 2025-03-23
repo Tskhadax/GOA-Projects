@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+body{
+    padding: 120px 0 80px 170px;
+    font-family: open sans;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.star-logo{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.big-p{
+    width: 450px;
+    line-height: 1.7;
+    color: #67666c;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.checked{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.checked h3{
+    color: #67666c;
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.checked-list-container{
+    margin-top: 36px;
+}
+
+.rate-comment-container1, .rate-comment-container2{
+    width: 400px;
+    height: 210px;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 40px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.imgs-container{
+    display: flex;
+}
+
+.stars-container{
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.rate-comment-container1 p, .rate-comment-container2 p{
+    color: #67666c;
+    font-size: 14px;
+    width: 230px;
+    line-height: 1.8;
+    margin-top: 8px;
+}
+
+.rate-comment-container1{
+    margin-left: 420px;
+}
+
+.rate-comment-container2{
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        padding: 20px;
+        height: 140vh;
+        overflow: visible;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rate-comment-container1, .rate-comment-container2{
+        margin: 0;
+        width: 450px;
+        margin-top: 32px;
+    }
+    
+}
