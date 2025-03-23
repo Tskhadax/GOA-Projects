@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./checkout-style.css">
+</head>
+<body>
+    <a href="./mainpage.html"><button class="back-button">Back</button></a>
+    <div class="container">
+        <form>
+            <h1>Checkout</h1>
+            <h2>Choosen items: </h2>
+            <div class="items">
+                <div class="item"><h2>Example</h2></div>
+                <div class="item"><h2>Example</h2></div>
+                <div class="item"><h2>Example</h2></div>
+                <div class="item"><h2>Example</h2></div>
+            </div>
+            <h2 class="sum">Full Price: N/A$</h2>
+            <div class="checkout-method">
+                <h2 class="payment">Add payment method:</h2>
+                <div class="payment-method">
+                    <div class="cash-container">
+                        <label for="cash">Using cash</label>
+                        <input type="radio" name="chooseone" id="cash">
+                    </div>    
+                    <div class="card-container">
+                        <label for="card">Using card</label>
+                        <input type="radio" name="chooseone" id="card">
+                    </div>    
+                </div>    
+                <div class="card-information">
+                    <div class="card-number">
+                        <label for="card-number">Card number</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9123 4567">
+                    </div>
+                    <div class="expdate-cvv-container">
+                        <div class="expdate">
+                            <label for="time">Expiration Date</label>
+                            <input type="text" id="expdate" placeholder="MM/YY">
+                        </div>    
+                        <div class="cvv">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123">
+                    </div> 
+                </div>
+                <div class="checkout-button-container">
+                    <button class="checkout-button"><a href="./checkout-button.html">Checkout</a></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

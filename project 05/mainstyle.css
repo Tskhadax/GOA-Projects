@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background: linear-gradient( #1e3c72, #2a5298, #243b55);
+    color: #ffffff;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(90deg, #2c3e50, #4c5c68); 
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    padding: 30px;
+    padding-left: 170px;
+    padding-right: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.computer-shop-logo{
+    width: 150px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#searchbar{
+    width: 300px;
+    height: 40px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    padding: 16px;
+    border: solid 1px #000000;
+    outline: none;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-button{
+    height: 40px;
+    width: 50px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: none;
+    outline: none;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-anchor{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+.basket-img{
+    width: 25px;
+    height: 20px;
+}
+
+.black-magnifying-glass{
+    width: 20px;
+    height: 20px;
+}
+
+section{
+    width: 1240px;
+}
+
+.category{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+.part-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1240px;
+}
+
+.part-item{
+    background-color: rgb(255, 255, 255, 0.4);
+    width: 400px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 32px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.part-img{
+    width: 100%;
+    height: 300px;
+}
+
+.part-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-to-cart-button{
+    width: 100%;
+    height: 30px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+.add-to-cart-img{
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.add-to-cart-button:hover{
+    background-color: blue;
+}
+
+.part-price{
+    margin-top: 16px;
+    font-size: 24px;
+    color: #000000;
+    background-color: rgba(103, 88, 88, 0.4);    
+    border-radius: 12px;
+    width: 100px;
+    text-align: center;
+}
+
+.part-name{
+    font-size: 16px;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #1a2a3a; 
+    margin-top: 100px;
+    color: #ffffff; 
+    padding: 130px;; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location, .phone, .facebook, .instagram, .email{
+    display: flex;
+    align-items: center;
+}
+
+.phone, .facebook, .instagram, .email{
+    margin-top: 16px;
+}
+
+.phone img, .facebook img, .location img, .instagram img, .email img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.facebook a{
+    color: blue;
+}
+
+.instagram a{
+    color: yellow;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-item{
+    margin-left: 80px;
+}
+
+.margined-h3{
+    margin-top: 35px;
+}
+
+.footer-item a{
+    color: #ffffff;
+}

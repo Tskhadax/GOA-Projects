@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background: linear-gradient( #1e3c72, #2a5298, #243b55);
+    height: 100vh;
+}
+
+.back-button{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 32px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 500px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sum{
+    margin-top: 16px;
+}
+
+.payment{
+    margin-top: 16px;
+}
+
+.payment-method{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.cash-container, .card-container{
+    display: flex;
+    align-items: center;
+}
+
+#cash, #card{
+    margin-left: 16px;
+}
+
+.card-container{
+    margin-top: 16px;
+}
+
+.card-number{
+    display: flex;
+    flex-direction: column;
+}
+
+#card-number, #expdate, #cvv{
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.expdate-cvv-container{
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.card-information{
+    margin-top: 16px;
+}
+
+.expdate{
+    margin-right: 20px;
+}
+
+.checkout-button{
+    width: 100%;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin-top: 32px;
+    background-color: blue;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
