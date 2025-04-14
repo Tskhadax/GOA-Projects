@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalilTask | Beautiful Productivity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="32x32" href="./Untitled39_20250328151508[1].png">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h1>HalilTask</h1>
+                </div>
+                
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </button>
+                
+                <nav class="main-nav" id="main-nav">
+                    <div class="nav-container">
+                        <div class="nav-links">
+                            <button class="nav-btn active" data-tab="tasks">
+                                <i class="fas fa-tasks"></i>
+                                <span>Tasks</span>
+                            </button>
+                            <button class="nav-btn" data-tab="notes">
+                                <i class="fas fa-sticky-note"></i>
+                                <span>Notes</span>
+                            </button>
+                        </div>
+                        <div class="user-actions">
+                            <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                                <i class="fas fa-moon"></i>
+                                <span>Theme</span>
+                            </button>
+                            <div class="user-profile">
+                                <i class="fas fa-user-circle"></i>
+                                <span id="username-display">User</span>
+                            </div>
+                            <button id="logout-btn" class="icon-btn" title="Logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <section id="tasks" class="content-section active">
+                <div class="section-header">
+                    <h2><i class="fas fa-tasks"></i> My Tasks</h2>
+                    <form id="task-form" class="task-input-form">
+                        <input type="text" id="task-input" placeholder="Add a new task..." required>
+                        <button type="submit" class="primary-btn">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="task-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+                
+                <div id="task-list" class="task-list">
+                </div>
+            </section>
+
+            <section id="notes" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-sticky-note"></i> My Notes</h2>
+                    <button id="add-note-btn" class="primary-btn">
+                        <i class="fas fa-plus"></i> New Note
+                    </button>
+                </div>
+                
+                <div id="notes-container" class="notes-grid">
+                </div>
+            </section>
+        </main>
+
+        <div id="note-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Edit Note</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="note-title" placeholder="Note title">
+                    <textarea id="note-content" placeholder="Write your note here..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button id="save-note" class="primary-btn">Save</button>
+                    <button id="delete-note" class="danger-btn">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="profile-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-user-edit"></i> Edit Profile</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="profile-username">Username</label>
+                            <input type="text" id="profile-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-email">Email</label>
+                            <input type="email" id="profile-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-avatar">Avatar URL</label>
+                            <input type="url" id="profile-avatar" placeholder="https://example.com/avatar.jpg">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-theme">Theme Preference</label>
+                            <select id="profile-theme">
+                                <option value="auto">Auto (System Default)</option>
+                                <option value="light">Light Mode</option>
+                                <option value="dark">Dark Mode</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="save-profile" class="primary-btn">Save Changes</button>
+                    <button class="secondary-btn" id="cancel-profile">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-container"></div>
+
+    <script src="script.js"></script>
+    <div id="delete-modal" class="modal">
+        <div class="modal-content small-modal">
+            <div class="modal-header">
+            <h3><i class="fas fa-exclamation-triangle"></i> Confirm Delete</h3>
+            </div>
+            <div class="modal-body">
+            <p id="delete-message">Are you sure you want to delete this task?</p>
+            </div>
+            <div class="modal-footer">
+            <button id="confirm-delete" class="danger-btn">Delete</button>
+            <button id="cancel-delete" class="secondary-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="edit-task-modal" class="modal">
+        <div class="modal-content small-modal">
+          <div class="modal-header">
+            <h3><i class="fas fa-edit"></i> Edit Task</h3>
+            <button class="close-modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <input type="text" id="edit-task-input" class="task-edit-input">
+          </div>
+          <div class="modal-footer">
+            <button id="save-task-edit" class="primary-btn">Save Changes</button>
+            <button class="secondary-btn close-edit-task">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

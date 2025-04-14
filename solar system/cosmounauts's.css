@@ -1,0 +1,173 @@
+body{
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+main{
+    display: flex;
+}
+
+.firstdiv{
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+    font-family: sans-serif;
+    padding: 100px 50px;
+    height:400vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+  
+  
+}
+
+.firstdiv h1{
+    font-size: 2.5rem;
+}
+
+
+
+
+.seconddiv{
+    color: #fff;
+    height:400vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+.seconddiv img{
+    border-radius:30px;
+    transform: translateY(70px);
+    box-shadow: 7px 7px 10px ;
+}
+
+
+
+
+
+.kaciimg{
+    box-shadow: 7px 7px 10px white;
+    margin-top: 240px;
+    border-radius:30px ;
+}
+
+.h2{
+    font-size: 2.5rem;
+    margin-top: 250px;
+    font-family: sans-serif;
+}
+
+.p1{
+    padding-right: 20px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+
+.hh{
+    margin-top: 200px;
+}
+
+.pipia{
+    width: 650px;
+    margin-top: 100px;
+    box-shadow: 7px 7px 10px gray;
+}
+
+.headerimg{
+    width: 100%;
+    transform: rotate(180deg);
+
+}
+
+ h4{
+
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    font-size: 3rem;
+    line-height: 70px;
+    text-shadow: 7px 7px 20px rgba(255, 166, 0, 0.649);
+}
+
+/* img{
+    box-shadow: 7px 7px 10px white;
+} */
+
+
+
+
+
+
+
+
+footer {
+    transform: translateY(-1000px);
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .similar-shows {
+    margin-top: 20px;
+  }
+  
+  .similar-shows h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .shows-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  
+  .show {
+    max-width: 200px;
+    text-align: left;
+  }
+  
+  .show img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .show p {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+
+
+
+
+

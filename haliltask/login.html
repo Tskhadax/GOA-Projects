@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalilTask | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="32x32" href="./Untitled39_20250328151508[1].png">
+
+
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-glass">
+            <div class="auth-header">
+                <i class="fas fa-pen-fancy"></i>
+                <h1>Welcome to HalilTask</h1>
+                <p>Your beautiful productivity companion</p>
+            </div>
+            
+            <form id="auth-form" class="auth-form">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fas fa-user"></i> Username
+                    </label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+                
+                <p class="auth-footer">
+                    Don't have an account? <a href="#" id="switch-auth">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-container"></div>
+
+    <script>
+        let isLoginMode = true;
+        const authForm = document.getElementById('auth-form');
+        const switchAuth = document.getElementById('switch-auth');
+        const authBtn = authForm.querySelector('button');
+        const authHeader = document.querySelector('.auth-header h1');
+        
+        switchAuth.addEventListener('click', (e) => {
+            e.preventDefault();
+            isLoginMode = !isLoginMode;
+            
+            if (isLoginMode) {
+                authHeader.textContent = 'Welcome to ZenTask';
+                authBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> Sign In';
+                switchAuth.textContent = 'Sign up';
+                document.querySelector('.auth-header p').textContent = 'Your beautiful productivity companion';
+            } else {
+                authHeader.textContent = 'Create Account';
+                authBtn.innerHTML = '<i class="fas fa-user-plus"></i> Sign Up';
+                switchAuth.textContent = 'Sign in';
+                document.querySelector('.auth-header p').textContent = 'Get started with your productivity journey';
+            }
+        });
+        
+        authForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            
+            if (!username) {
+                showPopup('error', 'Username required', 'Please enter a username');
+                return;
+            }
+            
+            if (!password) {
+                showPopup('error', 'Password required', 'Please enter a password');
+                return;
+            }
+            
+            localStorage.setItem('username', username);
+            window.location.href = 'index.html';
+        });
+
+        function showPopup(type, title, message, duration = 3000) {
+            const container = document.querySelector('.popup-container') || createPopupContainer();
+            const popup = document.createElement('div');
+            popup.className = `popup-message ${type}`;
+            
+            let icon;
+            switch(type) {
+                case 'success': icon = 'fa-check-circle'; break;
+                case 'error': icon = 'fa-times-circle'; break;
+                default: icon = 'fa-info-circle';
+            }
+            
+            popup.innerHTML = `
+                <i class="fas ${icon} popup-icon"></i>
+                <div class="popup-content">
+                    <div class="popup-title">${title}</div>
+                    <div class="popup-text">${message}</div>
+                </div>
+            `;
+            
+            container.appendChild(popup);
+            setTimeout(() => popup.classList.add('active'), 10);
+            
+            if (duration > 0) {
+                setTimeout(() => {
+                    popup.classList.add('hiding');
+                    setTimeout(() => popup.remove(), 500);
+                }, duration);
+            }
+        }
+
+        function createPopupContainer() {
+            const container = document.createElement('div');
+            container.className = 'popup-container';
+            document.body.appendChild(container);
+            return container;
+        }
+    </script>
+</body>
+</html>

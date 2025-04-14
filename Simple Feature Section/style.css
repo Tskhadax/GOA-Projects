@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;     /* box-sizing: border-box Include padding and border in the element's total width and height */
+    font-family: Poppins;
+}
+
+body{
+    background-image: url(./images/Background_image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #121826;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    width: 450px;
+    text-align: center;
+}
+
+.centered-content-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #e3e4e6;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+h3{
+    margin-top: 16px;
+    font-size: 16px;
+    color: #a1a8b2;
+    font-weight: 400;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin-top: 20px;
+}
+
+.card1, .card2, .card3{
+    width: 355px;
+    height: 510px;
+    padding: 24px;
+    background-color: #212936;
+    border-radius: 12px;
+}
+
+.hand-emoji-container img{
+    height: 30px;
+    width: 25px;
+    border-radius: 100%;
+}
+
+.hand-emoji-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #fdeed9;
+}
+
+.goal-emoji-container img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.goal-emoji-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #dee9fb;
+}
+
+.messaging-emoji-container img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.messaging-emoji-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #fbe5e7;
+}
+
+h2{
+    font-size: 20px;
+    color: #e3e4e6;
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+p{
+    color: #a1a8b2;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.img-container{
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.img-container img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text{
+    width: 265px;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+    }
+
+    .box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1, .card2, .card3{
+        width: 315px;
+        height: 450px;
+    }
+
+    .card2, .card3{
+        margin-top: 50px;
+    }
+
+    .img-container{
+        margin-top: 12px;
+    }
+
+    .img-container img{
+        height: 190px;
+    }
+
+    p, h2{
+        margin-top: 8px;
+    }
+
+    .container{
+        height: 230vh;
+        overflow: hidden;
+    }
+}

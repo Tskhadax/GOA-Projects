@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e0e8ff;
+    background-image: url(./image/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;  /* width x height */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    height: 604px;
+    width: 354px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 48px;
+}
+
+.photo1{
+    margin: -48px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+h1{
+    font-family: Red Hat Display;
+    font-size: 24px;
+    color: #22335e;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 103px;
+}
+
+p{
+    color: #737a8d;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+
+.annual-plan{
+    background-color: #f8f9fe;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+h2{
+    font-family: Red Hat Display;
+    font-size: 14px;
+    color: #203051;
+}
+
+h3{
+    font-family: Red Hat Display;
+    font-size: 14px; 
+    color: #7d8091;
+}
+
+a{
+    margin-left: 90px;
+    font-family: Red Hat Display;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.payment{
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: #382ae1;
+    margin-top: 32px;
+    font-family: Red Hat Display;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0 20px 50px #d4ddfc;
+}
+
+.cancel{
+    border: none;
+    font-family: Red Hat Display;
+    color: #76819f;
+    font-weight: 700;
+    background-color: #ffffff;
+}
+
+.cancel-button-box{
+    width: 100%;
+    margin-top: 36px;   
+    display: flex;
+    justify-content: center;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #796ee8;
+}
+
+.payment:hover{
+    background-color: #766cf1;
+}
+
+.cancel:hover{
+    color: #101449;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+    background-color: #e0e8ff;
+    background-image: url(./image/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;  /* width x height */
+    }
+    
+    .box{
+        width: 280px;
+        height: 520px;
+        padding: 24px;
+
+    }
+
+    .photo1{
+        width: 328px;
+        height: 160px;
+        margin: -24px;
+    }
+
+    .h1{
+        margin-top: 56px;
+    }
+
+    .annual-plan{
+        padding: 15px   
+    }
+
+    a{
+        margin-left: 50px;
+    }
+
+    p{
+        line-height: 1.5;
+        font-size: 15px
+    };
+
+    .cancel{
+        margin-top: 28px;
+    }
+
+    .payment{
+        margin-top: 24px;
+    }
+}

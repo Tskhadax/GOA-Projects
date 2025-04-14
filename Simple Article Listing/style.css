@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 130vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 640px;
+}
+
+.text img{
+    margin-top: 50px;
+}
+
+.card1, .card2, .card3{
+    width: 830px;
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.card1 img, .card2 img, .card3 img{
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+}
+
+.text-container{
+    margin-left: 64px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 24px;
+    color: #989fa5;
+}
+
+@media screen and (max-width: 900px){
+    .card1, .card2, .card3{
+        width: 550px;
+    }
+}

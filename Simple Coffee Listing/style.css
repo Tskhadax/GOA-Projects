@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #121315;
+    font-family: Montserrat;
+}
+
+.Sally-Benashvili{
+    font-family: "Updock", cursive;
+    font-size: 48px;
+    margin-top: 100px;
+    margin-left: -90px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 300px;
+}
+
+.box{
+    background-color: #1c1d1f;
+    width: 950px;
+    height: 720px;
+    border-radius: 12px;
+    background-image: url(./images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 600px 30px;
+    padding: 140px;
+}
+
+.top-background{
+    width: 100%;
+    height: 336px;
+    background-image: url(./images/bg-cafe.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.title{
+    text-align: center;
+    width: 570px;
+}
+
+.title h1{
+    color: #ffffff;
+}
+
+.title p{
+    font-weight: 400;
+    color: #787c85;
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 1.4;
+}
+
+.buttons{
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1c1d1f;
+    margin-top: 25px;
+}
+
+button:hover{
+    background-color: #6e757d;
+}
+
+.coffees{
+    margin-top: 30px;
+    width: 100%;
+    height: 510px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cappuccino, .house-coffee, .espresso, .coffee-latte, .chocolate-coffee, .valentine-special{
+    width: 270px;
+    height: 255px;
+    margin: 13px;
+}
+
+.coffee-latte, .chocolate-coffee, .valentine-special{
+    margin-top: 50px;
+}
+
+.cappuccino-img-container, .house-coffee-img-container, .espresso-img-container, .coffee-latte-img-container, .chocolate-coffee-img-container, .valentine-special-img-container{
+    width: 250px;
+    height: 160px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+.cappuccino-img-container{
+    background-image: url(./images/cappucino-fotoliastock.jpg);
+}
+
+.house-coffee-img-container{
+    background-image: url(./images/Americano-coffee-recipe.jpg);
+}
+
+.espresso-img-container{
+    background-image: url(./images/specialty-coffee-cappuccino-latte-hot-chocolate-mocha.jpg);
+}
+
+.coffee-latte-img-container{
+    background-image: url(./images/Coffee-heart_iStock-681614794-scaled.jpg);
+}
+
+.chocolate-coffee-img-container{
+    background-image: url(./images/ec178d83e5f597b162cda1e60cb64194.jpg);
+}
+
+.valentine-special-img-container{
+    background-image: url(./images/679f6c777d38552f532633fb9de81327.jpg);
+}
+
+.popular-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 70px;
+    height: 24px;
+    background-color: #f5c767;
+    border-radius: 16px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price h2{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.price h3{
+    background-color: #bee4cd;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.vote{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.rate{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.without-rating{
+    margin-left: 4px;
+    font-size: 14px;
+    color: #6c6f76;
+    font-weight: 400;
+}
+
+.vote-count{
+    font-size: 14px;
+    color: #6c6f76;
+    font-weight: 400;
+}
+
+.vote-with-sold-out{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.sold{
+    font-size: 14px;
+    color: #ff7b62;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        height: 250vh;
+    }
+
+    .box{
+        width: 337px;
+        height: 2250px;
+        padding: 24px;
+        background-position: 200px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .top-background{
+        height: 300px;
+    }
+
+    .cappuccino, .house-coffee, .espresso, .coffee-latte, .chocolate-coffee, .valentine-special{
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .title{
+        width: 100%;
+    }
+    
+    h1{
+        margin-top: 100px;
+    }
+
+    .coffees{
+        width: 270px;
+    }
+
+    .Sally-Benashvili{
+        font-size: 32px;
+        margin-top: 1390px;
+        margin-left: -0px;
+        color: white;
+    }
+}

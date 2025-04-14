@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background: linear-gradient( #1e3c72, #2a5298, #243b55);
+    height: 110vh;
+    overflow: hidden;
+}
+
+.back-button{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 32px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 50px;
+
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    background-color: #000000;
+    height: 1px;
+    width: 400px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+}
+
+.img-container{
+    background-color: #ffffff;
+    border-radius: 100%;
+    height: 100px;
+}
+
+.email{
+    margin-top: 32px;
+}
+
+.name{
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+h1{
+    margin-bottom: 16px;
+}
+
+.number, .purchases{
+    margin-top: 16px;
+}
+

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.purple-area{
+    background-color: #ab3dfe;
+    width: 450px;
+    height: 950px;
+    border-radius: 300px;
+    position: relative;
+    bottom: 300px;   
+}
+
+.phone{
+    width: 250px;
+    height: 500px;
+    border: solid 8px #ffffff;
+    background-color: hsl(270, 20%, 96%);
+    position: relative;
+    bottom: 850px;
+    left: 390px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px #b3b3b3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.camera{
+    width: 130px;
+    height: 20px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 100;
+}
+
+.phone-purple-area{
+    height: 65px;
+    width: 100%;
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    position: relative;
+    bottom: 35px;
+    border-radius: 22px 22px 8px 8px ;
+    padding: 32px 14px 12px 14px;
+    display: flex;
+}
+
+.avatar-name-container{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    border: solid 1px #ffffff;
+    margin-right: 8px;
+    position: relative;
+    bottom: 2px;
+}
+
+.name-container h2{
+    font-size: 12px;
+    font-family: Rubik;
+    color: #ffffff;
+    font-weight: 500;
+
+}
+
+.name-container h4{
+    font-size: 8px;
+    font-family: Rubik;
+    color: hsl(276, 100%, 81%);
+    position: relative;
+    bottom: 1px;
+    font-weight: 300;
+    margin-top: 2px;
+}
+
+.arrow{
+    width: 10px;
+    height: 6px;
+    rotate: 90deg;
+    position: relative;
+    right: 6px;
+    bottom: 2px;
+}
+
+.three-dots{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 80px;
+}
+
+.dot{
+    width: 3px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 1px;
+}
+
+.conversation{
+    padding: 8px;
+    width: 100%;
+    height: 355px;
+    position: relative;
+    bottom: 42px;
+}
+
+.text1, .text2, .text3, .text4, .text5{
+    width: 128px;
+    height: 36px;
+    background-color: rgb(237, 229, 244);    
+    border-radius: 12px 12px 12px 4px;
+    color: hsl(276, 55%, 52%);
+    font-size: 8px;
+    padding: 10px;
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2, .text3, .text4{
+    margin-top: 8px;
+}
+
+.dog-imgs-container{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dog-imgs-container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.dog-imgs-container-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text3, .text4{
+    background-color: #ffffff;
+    border-radius: 12px 12px 4px 12px;
+    padding: 10px 8px 10px 10px;
+}
+
+.text4{
+    width: 80px;
+    height: 18px;
+    padding: 8px 0px 8px 0px;
+}
+
+.text3-4-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.text5{
+    margin-top: 16px;
+    width: 128px;
+    height: 40px;
+}
+
+.option1, .option2{
+    width: 160px;
+    height: 36px;
+    border-radius: 12px 12px 12px 4px;
+    background: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin-top: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    width: 12px;
+    height: 12px;
+    border: 1px solid hsl(276, 100%, 81%);
+    border-radius: 100%;
+}
+
+.option-text{
+    font-size: 8px;
+    position: relative;
+    top: 1px;
+    font-family: Rubik;
+    color: hsl(0, 0%, 91%);
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.option-price1, .option-price2{
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+    font-family: Rubik;
+    color: hsl(0, 0%, 91%);
+    font-weight: 700;
+}
+
+.option-price1{
+    left: 27px;
+}
+
+.option-price2{
+    left: 44px;
+}
+
+input{
+    width: 100%;
+    height: 36px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    padding: 12px 4px 12px 24px;
+}
+
+input::placeholder{
+    font-size: 8px;
+    font-family: Rubik;
+    color: hsl(280, 3%, 81%);
+    font-weight: 500;
+}
+
+.button-img{
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    rotate: -90deg;   
+}
+
+button{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    position: relative;
+    bottom: 26px;
+    left: 195px;
+}
+
+.main-text{
+    position: relative;
+    bottom: 1160px;
+    left: 800px;
+    width: 400px;
+    z-index: 100;
+}
+
+h1{
+    font-family: Rubik;
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+}
+
+.main-text p{
+    font-family: Rubik;
+    color: hsl(270, 7%, 64%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+.gray-area{
+    background-color: #f7f5fa;
+    width: 600px;
+    height: 1000px;
+    border-radius: 500px;
+    position: relative;
+    bottom: 1400px;
+    left: 1100px;   
+}

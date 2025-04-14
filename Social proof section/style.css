@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text h1{
+    font-family: League Spartan;
+    color: #551e58;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.text p{
+    font-family: League Spartan;
+    color: #857985;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 24px;
+}
+
+.box{
+    height: 600px;
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box-item1{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.text{
+    height: 250px;
+    width: 450px; 
+}
+
+.star1, .star2, .star3{
+    background-color: #f7f2f8;
+    padding: 24px;
+    height: 8px;
+    width: 400px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.stars img{
+    margin-right: 8px;
+}
+
+.stars h2{
+    font-family: League Spartan;
+    color: #551e58;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+.stars{
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    height: 200px;
+    margin-top: 32px;
+}
+
+.star1{
+    margin-right: 96px;
+}
+
+.star2{
+    margin-right: 48px;
+}
+
+.box-item2{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colton, .irene, .anne{
+    background-color: #512050;
+    width: 286px;
+    height: 168px;
+    padding: 32px;
+    border-radius: 6px;
+}
+
+.irene{
+    margin-top: 16px;
+}
+
+.anne{
+    margin-top: 32px;
+}
+
+.box-item2 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+}
+
+.name-container{
+    padding-left: 18px;
+}
+
+h3, h4{
+    font-family: League Spartan;
+    font-size: 15px;
+}
+
+h3{
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 4px;
+}
+
+h4{
+    color: #ce68a7;
+    font-weight: 400;
+}
+
+.box-item2 p{
+    font-family: League Spartan;
+    color: #ffffff;
+    margin-top: 24px;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+    }
+
+    .container{
+        height: 200vh; /*სხვანაირად არ ჩანდა*/
+    }
+    
+    .box{
+        width: 375px;
+        height: auto; 
+    }
+
+    .box-item1{
+        width: 100%;
+        height: auto;
+    }
+
+    .stars{
+        width: 100%;
+        margin-top: 42px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .text p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .star1, .star2, .star3{
+        margin: 0;
+        width: 100%;
+        height: 75px;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .star-container{
+        margin-bottom: 8px;
+    }
+
+    .stars h2{
+        margin: 0;
+    }
+
+    .star2, .star3{
+        margin-top: 16px;
+    }
+
+    .colton, .irene, .anne{
+        width: 100%;
+        margin: 0;
+    }
+
+    .irene, .anne{
+        margin-top: 16px;
+    }
+
+    .box-item2{
+        margin-top: 110px;
+    }
+}
+
+

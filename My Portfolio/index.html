@@ -1,0 +1,226 @@
+<!-- პერსონალური პორტფოლიო ვებგვერდი
+მთავარი ფუნქციონალი და გვერდები:
+მთავარი გვერდი (Home):
+მიმზიდველი ჰედერი შენს სახელსა და პროფესიაზე.
+
+ 
+აღწერა შენზე ("მე ვარ..." ტექსტით და შესაბამისი სურათით).
+
+ 
+"Call to Action" ღილაკი: „დამიკავშირდი“, რომელიც მიიყვანს კონტაქტების გვერდზე.
+
+
+ჩემს შესახებ (About Me):
+შენი ბიოგრაფიის ტექსტი.
+
+ 
+ფოტო ან ანიმაცია.
+
+ 
+Skills სექცია: ჩამონათვალი (მაგ., HTML, CSS, JavaScript) ან progress bar (CSS-ით).
+
+
+პროექტები (Projects):
+პროექტების ბარათები (Project 1, Project 2 და ა.შ.).
+
+ 
+Hover ეფექტები: ბარათზე მაუსის მიტანით ტექსტის გამოჩენა.
+
+ 
+ღილაკები „ნახვა“ ან „GitHub“-ზე გადაყვანა.
+
+
+კონტაქტი (Contact):
+კონტაქტის ფორმა (სახელი, ელფოსტა, შეტყობინება).
+
+ 
+Footer სექცია სოციალური მედიის ხატულებით (Facebook, LinkedIn, GitHub).
+
+
+----------------------
+დიზაინის იდეები:
+ფერები და შრიფტები:
+აირჩიე თანამედროვე ფერები, გამოიყენეთ
+
+https://coolors.co/
+
+ 
+გამოიყენე თანამედროვე, უნიკალური და მიმზიდველი Google Fonts
+
+
+გამოყენე CSS:
+Flexbox ან Grid ლეიაუტისთვის.
+Hover და Transition ეფექტები ელემენტებზე.
+
+ 
+Media Queries: სრული responsive დიზაინი.
+
+
+მოძრაობა და ანიმაცია:
+გამოიყენე CSS Animations ან Keyframes ტექსტის ან ღილაკების მოძრაობისთვის.
+
+დაამატე Scroll-შესვლა ან Fade ეფექტები. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Responsive</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="for-home" class="for-home"></div>
+    <a href="#for-home">
+        <div class="up">
+            <img src="./img/up-arrow.svg" alt="up-arrow">
+        </div>
+    </a>
+    <header>
+        <div class="header-container">
+            <h3 id="home">Programmer .</h3>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                    <li><a href="#my-projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="socials-container">
+            <a href="https://github.com/Nikoloz8">
+                <img src="./img/github.png" alt="github">
+            </a>
+            <a href="https://www.facebook.com/nikolozi.tevdoradze/">
+                <img src="./img/facebook (1).png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/nikoloztevdoradze6/">
+                <img src="./img/instagram (1).png" alt="instagram">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="img-text-container">
+            <div class="img-container">
+                <div class="name-container">
+                    <div class="name-container-package">
+                        <h2>NIKOLOZ</h2>
+                        <h2>TEVDORADZE</h2>
+                        <h2>FRONT-END DEVELOPER</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2 id="welcome">Welcome to my portfolio</h2>
+            <h2 id="about-me">About Me</h2>
+            <div class="img-text-container">
+                <p>My name is Nikoloz Tevdoradze, I am from Georgia, Imereti. I am 16 years old and have 2 months of
+                    experience in Front-end programming. I also have experience working on like 50 projects. My
+                    knowledge
+                    includes HTML, CSS and Python. I am always evolving.</p>
+                <div class="my-img-container">
+                    <img class="me" src="./img/DSC04232.JPG" alt="me">
+                </div>
+            </div>
+            <div class="progress-bars">
+                <div class="skills">
+                    <div class="progress-bar-container">
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div class="progress-bar-html"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress-bar-css"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <h4>Python</h4>
+                        <div class="progress">
+                            <div class="progress-bar-python"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact"><button class="contact">Contact me!</button></a>
+        </div>
+        <h3 class="projects-title" id="my-projects">My Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <img src="./img/Screenshot 2024-12-06 041615.png" alt="">
+                <h4>Beautiful Login Form</h4>
+                <a href="https://github.com/Nikoloz8/GOA_Course/tree/main/Projects%20Month%202/Login%20Page"><button
+                        class="see-code">View Code</button></a>
+            </div>
+            <div class="project">
+                <img src="./img/challenge-72-thumbnail.jpg" alt="">
+                <h4>Device Shop Checkout</h4>
+                <a
+                    href="https://github.com/Nikoloz8/GOA_Course/tree/main/Projects%20Month%202/Device%20Shop%20Checkout"><button
+                        class="see-code">View Code</button></a>
+            </div>
+            <div class="project">
+                <img src="./img/Screenshot 2024-12-06 042034.png" alt="">
+                <h4>Beautiful Landing Page</h4>
+                <a href="https://github.com/Nikoloz8/GOA_Course/tree/main/Projects%20Month%202/Landing%20Page"><button
+                        class="see-code">View Code</button></a>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="project">
+                <img src="./img/Screenshot2024-12-06040513.png" alt="">
+                <h4>Neon Login Form With Switch</h4>
+                <a href="https://github.com/Nikoloz8/GOA_Course/tree/main/Projects%20Month%202/Neon%20Login"><button
+                        class="see-code">View Code</button></a>
+            </div>
+            <div class="project">
+                <img src="./img/Screenshot 2024-12-06 041118.png" alt="">
+                <h4>Travel Website</h4>
+                <a href="https://github.com/Nikoloz8/GOA_Course/tree/main/Projects%20Month%202/Travel%20Website"><button
+                        class="see-code">View Code</button></a>
+            </div>
+            <div class="project">
+                <img src="./img/Screenshot 2024-12-06 040919.png" alt="">
+                <h4>Nike Air Jordan</h4>
+                <a href="https://github.com/Nikoloz8/GOA_Course/tree/main/Projects%20Month%202/Nike%20Air%20Jordan"><button
+                        class="see-code">View Code</button></a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer id="contact">
+        <div class="phone-email-container">
+            <div class="contact-info"><img src="./img/smartphone-call.png" alt="">
+                <h2 class="phone"> +995 577 19 56 39</h2>
+            </div>
+            <div class="contact-info"><img src="./img/mail.png" alt="">
+                <h2 class="email">nikoloztevdoradze08@gmail.com</h2>
+            </div>
+        </div>
+        <div class="socials-container2">
+            <a href="https://github.com/Nikoloz8">
+                <img src="./img/github.png" alt="github">
+            </a>
+            <a href="https://www.facebook.com/nikolozi.tevdoradze/">
+                <img src="./img/facebook (1).png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/nikoloztevdoradze6/">
+                <img src="./img/instagram (1).png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="./img/linkedin.png" alt="linkedin2">
+            </a>
+            <a href="https://t.me/Nikoloz_Tevdoradze">
+                <img src="./img/telegram.png" alt="telegram">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

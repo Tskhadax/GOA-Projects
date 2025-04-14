@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background: linear-gradient( #1e3c72, #2a5298, #243b55);
+    height: 100vh;
+}
+
+.back-button{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 32px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 50px;
+}
+
+form{
+    width: 500px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+label{
+    font-size: 16px;
+}
+
+.password{
+    margin-top: 20px;
+}
+
+#email, #password{
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.login-button{
+    width: 100%;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    background-color: blue;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
